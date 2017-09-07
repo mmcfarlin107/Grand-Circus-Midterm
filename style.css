@@ -1,0 +1,174 @@
+.jumbotron {
+  background-image: url('http://www.jeffanderin.us//images/CinemaBackground.jpg');
+  color: white;
+  text-align: center;
+  background-position: 0% 20%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+}
+
+h1 {
+font-family: 'Pacifico', cursive;
+}
+
+.popcorn {
+  height: 300px;
+}
+
+body {
+  background-color: black;
+  font-family: 'Raleway', sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.row {
+  padding: 15px;
+  background-color: black;
+}
+
+.col-xs-2 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.screen {
+  margin-bottom: 100px;
+}
+
+
+h4 {
+  text-align: center;
+}
+
+
+/* CSS for Seats on click*/
+.available.is-active, .selected.is-active, .reserved.is-active {
+  z-index: 10000;
+}
+.wrapper {
+  position: relative;
+  display: inline-block;
+  height: 150px;
+  width: 10%;
+  float: left;
+}
+.seat {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.available {
+  z-index: 100;
+  position: absolute;
+}
+.selected {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.reserved {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.unavailable {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.seatid {
+  z-index: 100000000;
+  height: 1000px;
+  width: 100px;
+  color: white;
+}
+
+/*This is CSS styling or our Guide thumbnails*/
+.thumbnail {
+  padding-top: 40px;
+  background-color: lightgrey;
+  border: none;
+}
+.row-guide {
+  padding-top: 10px;
+  background-color: lightgrey;
+  width: 40%;
+  height: 310px;
+  color: black;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+fieldset {
+  width: 50%;
+  border-radius: 5px;
+  border: 2px, solid, white;
+}
+
+
+/*This CSS styling for our form*/
+form {
+  display: none;
+}
+form.is-active {
+  display: block;
+}
+.reservationForm {
+  padding-bottom: 20px;
+  margin-bottom: 0;
+  margin-right: auto;
+  margin-left: auto;
+  height: 400px;
+  width: 50%;
+}
+.form-group {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.form-head {
+  text-align: center;
+}
+.form-wrapper {
+  background-color: white;
+  margin-bottom: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 400px;
+  width: 50%;
+}
+#button{
+  background-color: #0cad3f;
+  border-radius: 5px;
+  width: 100px;
+  height: 50px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+}
+.centerButton {
+  text-align: center;
+  padding-bottom: 100px;
+}
+#button:hover {
+  box-shadow: 0 3px 1px 0 lightgrey;
+}
+/*Style for hover info */
+
+.hoverInfo {
+  display: block;
+  width: 100%;
+  max-height: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  text-align: left;
+  padding: 10px;
+}
